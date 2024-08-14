@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistani Flag</title>
+    <style>
+        .flag {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background-color: green;
+            border: 1px solid #000;
+        }
+        .flag::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 100%;
+            background-color: white;
+        }
+        .moon {
+            position: absolute;
+            left: 160px;
+            top: 60px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .moon::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: green;
+        }
+        .star {
+            position: absolute;
+            left: 190px;
+            top: 45px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid white;
+            transform: rotate(35deg);
+        }
+        .star::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 10px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid white;
+            transform: rotate(-70deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="flag">
+    <div class="moon"></div>
+    <div class="star"></div>
+</div>
+
+</body>
+</html>
